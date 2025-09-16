@@ -14,7 +14,7 @@
 } */
 
 
-function isOdd(num) {
+/* function isOdd(num) {
     return num % 2 !== 0;
 }
 
@@ -33,3 +33,24 @@ let productOfAllNumbers = multipliedNumbers.reduce((total, currentItem) => {
 console.log(productOfAllNumbers);
 
 console.log("alt method: " + numbers.filter((num)=>num%2!==0).map((num)=>num*3).reduce((total,currentItem)=>total*currentItem,1));
+*/
+
+/*describe("camelize", function() {
+
+  it("leaves an empty line as is", function() {
+    assert.equal(camelize(""), "");
+  });
+
+  it("turns background-color into backgroundColor", function() {
+    assert.equal(camelize("background-color"), "backgroundColor");
+  });
+
+  it("turns list-style-image into listStyleImage", function() {
+    assert.equal(camelize("list-style-image"), "listStyleImage");
+  });
+
+  it("turns -webkit-transition into WebkitTransition", function() {
+    assert.equal(camelize("-webkit-transition"), "WebkitTransition");
+  });
+
+}); */
