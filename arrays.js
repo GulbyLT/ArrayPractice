@@ -1,4 +1,4 @@
-function sumOfTripledEvens(array) {
+/* function sumOfTripledEvens(array) {
   let sum = 0;
   for (let i = 0; i < array.length; i++) {
     // Step 1: If the element is an even number
@@ -11,6 +11,23 @@ function sumOfTripledEvens(array) {
     }
   }
   return sum;
-} 
+} */
 
 
+function isOdd(num) {
+    return num % 2 !== 0;
+}
+
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let oddNumbers = numbers.filter(isOdd);
+console.log(oddNumbers);
+
+let multipliedNumbers = oddNumbers.map((num) => num * 3);
+console.log(multipliedNumbers);
+
+let productOfAllNumbers = multipliedNumbers.reduce((total, currentItem) => {
+    return total * currentItem;
+}, 1);
+console.log(productOfAllNumbers);
