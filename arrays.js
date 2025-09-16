@@ -31,3 +31,5 @@ let productOfAllNumbers = multipliedNumbers.reduce((total, currentItem) => {
     return total * currentItem;
 }, 1);
 console.log(productOfAllNumbers);
+
+console.log("alt method: " + numbers.filter((num)=>num%2!==0).map((num)=>num*3).reduce((total,currentItem)=>total*currentItem,1));
